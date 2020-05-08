@@ -6,7 +6,7 @@ let teamOneShots = document.querySelector('#teamone-numshots')
 shotsOne.addEventListener('click', function () {
 
     let teamOneNum = parseInt(teamOneShots.innerText) + 1
-    teamOneShots.innerText = teamTwoNum
+    teamOneShots.innerText = teamOneNum
     let random = Math.random() * 100
     if (random > 50) {
         document.getElementById("demo").innerHTML = "team scores"
