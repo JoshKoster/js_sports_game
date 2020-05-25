@@ -1,15 +1,127 @@
+:root {
+
+    --reset-color: rgb(240, 234, 160);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bangers';
+    
+
+
+}
+#page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 900px;
+    background-image: url('../basketballfloor.jpg');
+    background-size: 2000px;
+    background-repeat: no-repeat;
+   
+    
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: grey;
+   
+
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 2000px;
+    height: 600px;
+    
+    flex-wrap: wrap;
+    z-index: 11;
+    
+}
+
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    top: 275px;
+    left:910px;
+    transform: rotate(-25deg);
+    color: var(--reset-color);
+}
+
+
+#reset-container {
+    position: relative;
+    top: 175px;
+    left:750px;
+    z-index: 9;
+    color: var(--reset-color);
+    
+    
+}
+
+.ball {
+    position: relative;
+    z-index: 8;
+    top: 515px;
+    left: 938px;
+    font-size: 125px;
+}
+
+
 .hide {
     display: none;
 }
+
+#teams{
+    display: flex;
+    
+    width: 1875px;
+    height: 400px;
+    justify-content: flex-end;
+    
+}
+
 .left {
-    float: left;
+    width:1000px;
+    color: blue;
+    padding: 20px;
+
+    
+    
 }
+
 .right {
-    float: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+   width:850px;
+   padding: 20px;
+    
+    color: red;
+   
+   
 }
+
 .clear {
     clear: both;
+
 }
-#reset-container, h1 {
+
+#reset-container,
+h1 {
     text-align: center;
+
+
 }
