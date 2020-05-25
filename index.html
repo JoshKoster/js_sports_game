@@ -1,63 +1,67 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
+    <title>JS Game Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
-    <title>Js Game challenge</title>
-    
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div>
-        <h1>My Js game</h1>
-        <div id="reset-container">
+<div id="page-wrapper">
 
-            <button id="reset-button">RESET</button><br>
+    <body>
+        <div class="ball">🏀</div>
+        <div id="content">
+            <h1>My JS Game</h1>
 
-            Number Of Resets: <span id="num-resets">0</span>
+            <div id="reset-container">
 
-        </div>
+                <button id="reset-button">RESET</button><br>
 
-        <div class="clear"></div>
-        <div class="left">
-            <h2>
-                Team 1
-            </h2>
-
-            <div class="goals">
-                Shots Taken:<span id="teamone-numshots">0</span><br>
-                Goals:<span id="teamone-numgoals">0</span>
-            </div>
-
-            <div>
-                <button id="teamone-shoot-button">Shoot</button>
+                NUMBER OF RESETS: <span id="num-resets">0</span>
 
             </div>
+
+            <div class="clear"></div>
+<div id="teams">
+            <div class="left">
+
+                <h2>
+                    Team 1
+                </h2>
+
+                <div class="goals">
+                    SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
+                    GOALS: <span id="teamone-numgoals">0</span>
+                </div>
+
+                <div>
+                    <button id="teamone-shoot-button" onmousedown="shot.play()">SHOOT</button>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <h2>
+                    Team 2
+                </h2>
+                <div class="goals">
+                    SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
+                    GOALS: <span id="teamtwo-numgoals">0</span>
+                </div>
+            
+                <div>
+                    <button id="teamtwo-shoot-button" onmousedown="shot.play()">SHOOT</button>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        
         </div>
-
-    </div>
-
-    <div class="right">
-        <h2>
-            Team 2
-        </h2>
-
-        <div class="goals">
-            Shot Taken: <span id="teamtwo-numbershots">0</span>
-            Goals:<span id="teamtwo-numgoals">0</span>
-        </div>
-
-        <div>
-            <button id="teamtwo-shoot-button">Shoot</button>
-        </div>
-
-        <div class="clear"></div>
         <script src="./assets/javascript/game.js"></script>
 
-       
-</body>
+    </body>
 </div>
 
 </html>
